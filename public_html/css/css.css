@@ -1,3 +1,38 @@
 .bodi{
+    background-color: grey;
+    background: url("http://willpaper.com/download/32448-wallpaper-3d-hd-cars-1366x768.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
+}
+
+.projects_pictur{
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    width: 392px;
+    height: 180px;
+}
+
+.boditech{
+    background-color: grey;
+    background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3TCBpOC-134QP1ghBn3N6KtdWCo5tu8iZb1ABbYPMoK9g1v3wCA") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.AppAcademy{
+    color: black;   
+    text-decoration: activeborder;
+}
+
+.logo{
+    position: absolute;
+    height: 200px;
+    width: auto;
+    
 }
