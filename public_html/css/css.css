@@ -1,13 +1,16 @@
 .bodi{
     background-color: grey;
-    background: url("http://willpaper.com/download/32448-wallpaper-3d-hd-cars-1366x768.jpg") no-repeat center center fixed; 
+    background: url("http://ldopa.net/wp-content/uploads//AquaNegative.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    	
 
 }
-
+html{
+    cursor: url('http://www.rw-designer.com/cursor-view/31699.png'), default;
+}
 .projects_pictur{
     border-color: black;
     border-style: solid;
@@ -25,14 +28,22 @@
     background-size: cover;
 }
 
+.bodiproject{
+    background-color: grey;
+    background: url("http://p1.pichost.me/i/41/1640904.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
 .AppAcademy{
     color: black;   
     text-decoration: activeborder;
 }
 
-.logo{
-    position: absolute;
-    height: 200px;
-    width: auto;
-    
+.link1{
+    cursor: pointer;
+    transition: padding-left 250ms ease-out;
 }
