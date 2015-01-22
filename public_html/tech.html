@@ -9,44 +9,55 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--links to jquery -->
         <link href="css/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <link href="css/animation/jquery-ui.css" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
-        <script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-        <script type="text/javascript" src="fancybox/fancybox/jquery.easing-1.4.pack.js"></script>
+        <!--fancy box links -->
         <script type="text/javascript" src="fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-        <link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+        <!--bootstrap and my css links -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="css/css.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
     </head>
     <body class="boditech">
-
-        <div class="container yeah">
-            <nav>
-                <div class="col-xs-4">
-                    <center>
-                        <a href="index.html" class="link1"><span class="glyphicon glyphicon-home"></span>-About Me</a>
-                    </center>
-                </div>
-                <div class="col-xs-4">
-                    <center>
-                        <a href="projects.html" class="link2"><span class="glyphicon glyphicon-picture"></span>-Projects</a>
-                    </center>
-                </div>
-                <div class="col-xs-4">
-                    <center>
-                        <a href="tech.html" class="link3"><span class="glyphicon glyphicon-cog"></span>-Technologies</a>
-                    </center>
-                </div>
-            </nav>
-        </div>
+        <!--empty space -->
+        <div class="col-xs-1"></div>
+        <!--navigation bar -->
+        <div class="col-xs-10">
+        <ul class="nav nav-tabs" role="tablist">
+           
+             <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>-About Me</a></li>
+             
+  <li><a href="projects.html"><span class="glyphicon glyphicon-picture"></span>-Projects</a></li>
+             
+  <li class="dropdown">
+          <a href="tech.html" class="dropdown-toggle active" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>-Technologies <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="tech.html">HTML</a></li>
+            <li><a href="tech.html">CSS</a></li>
+            <li><a href="tech.html">BootStrap</a></li>
+            <li class='divider'></li>
+            <li><a href="tech.html">Javascript</a></li>
+            <li><a href="tech.html">Melon JS</a></li>
+          
+          </ul>
+        </li>
+       </ul>
+            </div>
+        <!--place holder -->
+        <div class="col-xs-1"></div>
     <center>
         <h1>Technologies</h1>
 
 
     </center>
+    <!--side images that are draggable -->
     <div class="col-xs-2">
           <img class="perk" src="http://img1.wikia.nocookie.net/__cb20130510005602/nazizombiesplus/images/d/d9/Juggernog.png">
           <img class="perk" src="http://img1.wikia.nocookie.net/__cb20110819212242/callofduty/images/7/78/Wd_doubletap.png">
@@ -58,6 +69,7 @@ and open the template in the editor.
         <img class="perk" src="http://img3.wikia.nocookie.net/__cb20110819211937/callofduty/images/f/fe/Wd_phd_flopper.png"> 
     
       </div>
+    <!--accordian -->
     <div class="col-xs-8">
 
         <div id="techAccord">
@@ -76,7 +88,7 @@ and open the template in the editor.
             <h1>CSS</h1>
             <div><img class="img-responsive" src="https://stgsys.net/wp-content/uploads/2012/03/css3-logo.png">
                 <p> I learned CSS at <a class="AppAcademy" href="http://www.theappacademy.us/">The App Academy.</a>CSS is a programming language that<br />
-                    makes html look better. A website without html will have no color except<br />
+                    makes html look better. A website without CSS will have no color except<br />
                     for pictures and everything in the website will be to the right.
                 </p></div>
 
@@ -120,13 +132,13 @@ and open the template in the editor.
         </div>
 
     </div>
+    <!--place holder -->
     <div class="col-xs-2"></div>
+    <!--buttons at the bottom of page -->
     <span class="backbutton">show background</span>
     <span class="cursorbutton">change cursor</span>
-    <script src="css/animation/external/jquery/jquery.js"></script>
-    <script src="css/animation/jquery-ui.js"></script>
-    <script src="css/jquery-ui-1.11.2.custom/external/jquery/jquery.js"></script>
-    <script src="css/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+<!--links to my script and bootstrap--> 
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
