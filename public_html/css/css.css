@@ -1,6 +1,6 @@
 .bodi{
     background-color: grey;
-    background: url("http://ldopa.net/wp-content/uploads//AquaNegative.jpg") no-repeat center center fixed; 
+    background: url("http://media1.giphy.com/media/hbgJDY4YvJp2o/200.gif") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,8 +20,8 @@ html{
 }
 
 .boditech{
-    background-color: grey;
-    background: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3TCBpOC-134QP1ghBn3N6KtdWCo5tu8iZb1ABbYPMoK9g1v3wCA") no-repeat center center fixed; 
+   
+    background: url("http://media1.giphy.com/media/ys25zLolNge9G/200.gif") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,7 +43,51 @@ html{
     text-decoration: activeborder;
 }
 
-.link1{
+.link1, .link2, .link3{
     cursor: pointer;
     transition: padding-left 250ms ease-out;
+}
+
+li{
+    margin-right: 120px;
+    margin-left: 120px;
+}
+.perk{
+    z-index: 1;
+}
+
+.gun{
+    z-index: 2;
+    height: 25px;
+    width: auto;
+    
+}
+
+.zomb{
+    height: 200px;
+    width: auto;
+}
+
+.car{
+    width: 550px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.colorcar{
+    background-color: gray;
+}
+
+.navigate{
+    background-color: black;
+    background: url("http://www.globemotorsports.com/Portals/49/Skins/master/img/menuDivide.png") top right no-repeat;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+        
+}
+
+.navigate1{
+   background-color: black;
+   height: 40px;
 }
