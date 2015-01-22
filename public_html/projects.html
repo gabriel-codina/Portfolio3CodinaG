@@ -10,41 +10,52 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/jquery-ui-1.11.2.custom/jquery-ui.css" rel="stylesheet">
+        <!--links for jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <link href="css/animation/jquery-ui.css" rel="stylesheet">
+        <!--links for fancy box -->
         <script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
         <script type="text/javascript" src="fancybox/fancybox/jquery.easing-1.4.pack.js"></script>
         <script type="text/javascript" src="fancybox/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
         <link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        <!--links for bootstrap and my css -->
         <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
         <link type="text/css" rel="stylesheet" href="css/css.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       
     </head>
     <body class="bodiproject">
-
-        <div class="container yeah">
-            <nav>
-                <div class="col-xs-4">
-                    <center>
-                        <a href="index.html" class="link1"><span class="glyphicon glyphicon-home"></span>-About Me</a>
-                    </center>
-                </div>
-                <div class="col-xs-4">
-                    <center>
-                        <a href="projects.html" class="link2"><span class="glyphicon glyphicon-picture"></span>-Projects</a>
-                    </center>
-                </div>
-                <div class="col-xs-4">
-                    <center>
-                        <a href="tech.html" class="link3"><span class="glyphicon glyphicon-cog"></span>-Technologies</a>
-                    </center>
-                </div>
-            </nav>
+        <!--empty place holding space -->
+        <div class="col-xs-1"></div>
+        <!--navigation bar -->
+        <div class="col-xs-10">
+        <ul class="nav nav-tabs" role="tablist">
+           
+             <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>-About Me</a></li>
+             
+  <li><a href="projects.html"><span class="glyphicon glyphicon-picture"></span>-Projects</a></li>
+             
+  <li class="dropdown">
+          <a href="tech.html" class="dropdown-toggle active" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>-Technologies <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="tech.html">HTML</a></li>
+            <li><a href="tech.html">CSS</a></li>
+            <li><a href="tech.html">BootStrap</a></li>
+            <li class='divider'></li>
+            <li><a href="tech.html">Javascript</a></li>
+            <li><a href="tech.html">Melon JS</a></li>
+          
+          </ul>
+        </li>
+       </ul> 
         </div>
+        <!--empty space -->
+        <div class="col-xs-1"></div>
     <center>
         <h1>Projects</h1>
+        <!--text that says the number of results -->
         <form id="live-search" action="" class="styled" method="post">
             <fieldset>
                 <input type="text" class="text-input" id="filter" value="" />
@@ -57,7 +68,7 @@ and open the template in the editor.
     </div>
 
     <div class="col-xs-8">
-
+<!--projects -->
         <div class="row">
 
             <div class="col-xs-6 vanish">
@@ -108,7 +119,7 @@ and open the template in the editor.
         <div class="row">
             <!--future projects-->
             <div class="col-xs-6 vanish">
-                <a href="index.html"> <img class="img-responsive img-rounded projects_pictur" src=""></a>
+                <a href="index.html"> <img class="img-responsive img-rounded projects_pictur" src="images/portv3.png"></a>
                 <h3 class="commentlist">Portfolio v3</h3>
                 <p>
                     This project is called Portfolio v3. This is basicly third version of my Portfolio. This uses <a href="tech.html">JQuery</a> unlike my first and second Portfolio.
@@ -132,13 +143,11 @@ and open the template in the editor.
     <div class="col-xs-2">
         <!--space to keep my projects closer to the right-->
     </div>
-
+<!--buttons at bottom of page -->
     <span class="backbutton">show background</span>
     <span class="cursorbutton">change cursor</span>
-    <script src="css/animation/external/jquery/jquery.js"></script>
-    <script src="css/animation/jquery-ui.js"></script>
-    <script src="css/jquery-ui-1.11.2.custom/external/jquery/jquery.js"></script>
-    <script src="css/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+    <!--links js for bootstrap and my script -->
+   <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
