@@ -1,12 +1,13 @@
 
 $("document").ready(function() {
+    //editing css
     $(".yeah").css({"background-color": "blue", "border": "2px solid black", "border-radius": "10px"});
-
     $(".link1,.link2,.link3").css({"margin": "0px", "width": "200px", "color": "black", "text-decoration": "none"});
     $("body p").css("color", "white");
     $("h1").css("color", "white");
     $(".backbutton").css({"border": "2px solid white", "background-color": "blue", "border-radius": "10px", "color": "white"});
     $(".cursorbutton").css({"border": "2px solid white", "background-color": "blue", "border-radius": "10px", "color": "white"});
+    //binding classees to functions when a event happens
     $(".link1").bind('mouseover', mouseOverMeLink1).bind('mouseout', mouseOutMe);
     $(".link3").bind('mouseover', mouseOverMeLink3).bind('mouseout', mouseOutMe);
     $(".link2").bind('mouseover', mouseOverMeLink2).bind('mouseout', mouseOutMe);
@@ -14,14 +15,20 @@ $("document").ready(function() {
     $("p").bind("contextmenu", clrChangeP);
     $(".yeah").bind("click", random);
     $(".yeah").bind("contextmenu", linkChange);
-    $("#techAccord").accordion({header: "h1"});
-
-   
-   
     $(".link1,.link2,.link3").bind('click', mouseClick);
     $(".backbutton").bind('click', mouseClick);
     $(".cursorbutton").bind('click', mouseClickCursor);
+    //functions that are self expainitory
+    $("#techAccord").accordion({header: "h1"});
+    $(".perk").draggable();
+    $(".perk").resize();
 
+   
+   
+   
+
+
+//function that filters the searches
     $("#filter").keyup(function() {
         
         // Retrieve the input field text and reset the count to zero
@@ -54,14 +61,11 @@ $("document").ready(function() {
         $("#filter-count").text("Number of Results = " + count).css("color", "white");
     });
 
-
+//makes links change
     function mouseOverMeLink1() {
         $(".link1").css({"padding-left": "75px"});
     }
 
-    function random(){
-   setInterval(linkChange, 500);
-    }
     
     function mouseOverMeLink2() {
         $(".link2").css({"padding-left": "75px"});
@@ -70,9 +74,14 @@ $("document").ready(function() {
     function mouseOverMeLink3() {
         $(".link3").css({"padding-left": "75px"});
     }
-
+    
+    //makes a rainbow
+    function random(){
+   setInterval(linkChange, 500);
+    }
+//changes background
     function clrChange() {
-        var RandomColor = Math.floor(Math.random() * 9);
+        var RandomColor = Math.floor(Math.random() * 10);
 
         if (RandomColor == "9") {
             $("body").css({"background-color": "blue", "background": "url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfxw--GPRUvr75vtclhdyv9BxHaEq7eFJ1QkAOouZwvM62w9Urrg') no-repeat center center fixed", "-webkit-background-size": "cover", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover"});
@@ -94,9 +103,13 @@ $("document").ready(function() {
             $("body").css({"background-color": "grey", "background": "url('http://img15.nnm.me/d/9/2/8/f/28b9c03a90d1dea1473a8a9a797.jpg') no-repeat center center fixed", "-webkit-background-size": "cover", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover"});
         } else if (RandomColor == "0") {
             $("body").css({"background-color": "magenta", "background": "url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb49tgTOSyIUK75CzoPIp4Dk51VeJXqPc3Mn8cO0Wv7XfbeXGBZA') no-repeat center center fixed", "-webkit-background-size": "cover", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover"});
+        } else if (RandomColor == "10") {
+            $("body").css({"background-color": "magenta", "background": "url('http://media0.giphy.com/media/jdJ5CQDw2iZYQ/200.gif') no-repeat center center fixed", "-webkit-background-size": "cover", "-moz-background-size": "cover", "-o-background-size": "cover", "background-size": "cover"});
+            
         }
+         
     }
-
+//changes paragraphs color
     function clrChangeP() {
         var RandomColor = Math.floor(Math.random() * 9);
 
@@ -122,17 +135,17 @@ $("document").ready(function() {
             $("p").css({"color": "white"});
         }
     }
-
+//changes links to normal
     function mouseOutMe() {
         $(".link1,.link2,.link3").css({"padding-left": "0px"});
     }
-
+//makes screend fade
     function mouseClick() {
         $(".link1,.link2,.link3, p,h1,.yeah, div, img, h1, h2, h3, h4, input").fadeToggle(2000);
         $(".backbutton").html("show website");
 
     }
-
+//makes a random cursor
     function mouseClickCursor() {
         var RandomColor = Math.floor(Math.random() * 9);
 
@@ -159,11 +172,13 @@ $("document").ready(function() {
         }
 
     }
-
+//makes a rondom color for links. easy way
     function linkChange() {
         var RandomColor = Math.floor(Math.random() * 16777215).toString(16);
         
     $(".yeah").css({"background-color":"#"+RandomColor});
     }
+    
+  
 
 });
